@@ -13,10 +13,8 @@ function App() {
     <div className="App">
       <header>
         <nav className='links'>
-          <Link className='link' to='/'>Home</Link>
-          <Link className='link' to='/banff'>Banff</Link>
-          <Link className='link' to='/capecod'>Cape Cod</Link>
-          <Link className='link' to='/whitemountains'>White Mountains</Link>
+          <Link to='/'>Home</Link>
+
         </nav>
       </header>
 
