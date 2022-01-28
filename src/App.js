@@ -6,19 +6,24 @@ import './App.css';
 import Home from './components/Home';
 import Banff from './components/Banff';
 import CapeCod from './components/CapeCod';
+import WhiteMountains from './components/WhiteMountains';
 
 function App() {
   return (
     <div className="App">
       <header>
-        <nav>
-          <Link to='/'>Home</Link>
-          <Link to='/banff'>Banff</Link>
-          <Link to='/capecod'>Cape Cod</Link>
+        <nav className='links'>
+          <Link className='link' to='/'>Home</Link>
+          <Link className='link' to='/banff'>Banff</Link>
+          <Link className='link' to='/capecod'>Cape Cod</Link>
+          <Link className='link' to='/whitemountains'>White Mountains</Link>
         </nav>
       </header>
 
       <Switch>
+        <Route exact path='/whitemountains'>
+          <WhiteMountains />
+        </Route>
         <Route exact path='/capecod'>
           <CapeCod />
         </Route>
